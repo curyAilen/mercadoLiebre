@@ -1,0 +1,159 @@
+/*
+● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+ul li a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.fa-shipping-fast {
+    color: #39b54a;
+    font-size: 1em;
+    border-radius: 50%;
+    border: 2px solid #39b54a;
+    padding: 15px;
+}
+
+.compraTexto {
+    justify-content: center;
+    display: flex;
+}
+
+span {
+    display: none;
+}
+
+li {
+    display: none;
+}
+
+main {
+    background-color: #ebebeb;
+}
+
+#importante section {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.DetalleProductos {
+    border-top: solid 1px #ebebeb;
+    text-align: left;
+}
+
+#importante .cajaProducto {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: white;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-bars {
+    background-color: #1259c3;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 3px;
+    color: #ebebeb;
+}
+
+.descuentos,
+.descripciones {
+    font-size: 16px;
+}
+
+.descuentos {
+    color: #39b54a;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.iconoFooter {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+}
+
+img#banner {
+    max-width: 100%;
+}
+
+img {
+    max-width: 45%;
+}
+
+p {
+    font-family: roboto;
+    font-size: 12px;
+}
+
+.titulos {
+    font-size: 24px;
+}
+
+body {
+    background-color: #EAC926;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/**************TABLET******************/
+
+@media(min-width:361px) {
+    .cajaProducto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        background: white;
+    }
+    .burger-menu {
+        display: none;
+    }
+    li {
+        display: block;
+    }
+    span {
+        display: block;
+    }
+}
+
+
+/**************DESKTOP******************/
+
+@media(min-width:769) {
+    .cajaProducto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        background: white;
+    }
+    .burger-menu {
+        display: none;
+    }
+    li {
+        display: block;
+    }
+    span {
+        display: block;
+    }
+}
