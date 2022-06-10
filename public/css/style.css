@@ -1,4 +1,4 @@
-/*
+        /*
 ● Paleta de colores
 Amarillo: #EAC926;
 Azul: #03264C;
@@ -7,203 +7,307 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;
 */
-
-#logo,
-#buscador {
-    width: 50%;
-}
-
-.contenedorLogoBuscador {
-    display: flex;
-    align-items: stretch;
-}
-
-ul li a {
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-.fa-shipping-fast {
-    color: #39b54a;
-    font-size: 1em;
-    border-radius: 50%;
-    border: 2px solid #39b54a;
-    padding: 15px;
-}
-
-.compraTexto {
-    justify-content: center;
-    display: flex;
-}
-
-span {
-    display: none;
-}
-
-li {
-    display: none;
-}
-
-main {
-    background-color: #ebebeb;
-}
-
-#importante section {
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-#importante .cajaProducto {
-    margin: 10px 0;
-    padding: 15px;
-    background-color: white;
-}
-
-.detalleProductos {
-    position: relative;
-    display: flex;
-    border-top: solid 1px #ebebeb;
-    text-align: left;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.detalleProductos i {
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-
-.precios {
-    width: 30%;
-    font-size: 18px;
-}
-
-.descuentos {
-    width: 70%;
-    color: #39b54a;
-    margin-left: 15px;
-    text-align: left;
-}
-
-.nombreProducto {
-    text-align: left;
-}
-
-.deta.burger-menu {
-    display: flex;
-    justify-content: center;
-}
-
-.fa-bars {
-    background-color: #1259c3;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 3px;
-    color: #ebebeb;
-}
-
-.descuentos,
-.descripciones {
-    font-size: 16px;
-}
-
-.iconoFooter {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #1259c3;
-}
-
-footer {
-    text-align: center;
-    align-items: center;
-}
-
-img#banner {
-    max-width: 100%;
-}
-
-img {
-    max-width: 45%;
-}
-
-p {
-    font-family: roboto;
-    font-size: 12px;
-}
-
-.titulos {
-    font-size: 24px;
-}
-
-body {
-    background-color: #EAC926;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/**************TABLET******************/
-
-@media(min-width:361px) and (max-width:768px) {
-    .cajaProducto {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        background: white;
-        width: 50%;
-    }
-    .burger-menu {
-        display: none;
-    }
-    li {
-        display: block;
-    }
-    span {
-        display: block;
-    }
-    .precios {
-        margin-right: 15px;
-    }
-    .ofertas,
-    .ultimaVista {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-
-/**************DESKTOP******************/
-
-@media(min-width:769) {
-    .cajaProducto {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        background: white;
-        width: 30%;
-    }
-    .burger-menu {
-        display: none;
-    }
-    li {
-        display: block;
-    }
-    span {
-        display: block;
-    }
-    .ofertas,
-    .ultimaVista {
-        display: flex;
-    }
-}
+        /*GENERAL*/
+        
+        body {
+            background-color: #EAC926;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .imgProducto {
+            width: 59%;
+        }
+        
+        #logo,
+        #buscador {
+            width: 50%;
+        }
+        
+        .contenedorLogoBuscador {
+            display: flex;
+            align-items: stretch;
+        }
+        
+        ul li a {
+            text-decoration: none;
+        }
+        
+        .fa-shipping-fast {
+            color: #39b54a;
+            font-size: 1em;
+            border-radius: 50%;
+            border: 2px solid #39b54a;
+            padding: 15px;
+        }
+        
+        .compraTexto {
+            justify-content: center;
+            display: flex;
+        }
+        
+        span {
+            display: none;
+        }
+        
+        li {
+            display: none;
+        }
+        
+        main {
+            background-color: #ebebeb;
+            padding: 0 0 50px 0;
+        }
+        
+        #importante {
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        
+        .cajaProducto {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: white;
+        }
+        
+        .detalleProductos {
+            position: relative;
+            display: flex;
+            border-top: solid 1px #ebebeb;
+            text-align: left;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        
+        .detalleProductos i {
+            display: block;
+            font-size: 16px;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #39b54a;
+            background-color: #FFF;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: -15px;
+        }
+        
+        .precios {
+            width: 30%;
+            font-size: 18px;
+        }
+        
+        .descuentos {
+            width: 70%;
+            color: #39b54a;
+            margin-left: 15px;
+            text-align: left;
+        }
+        
+        .nombreProducto {
+            text-align: left;
+        }
+        
+        .burger-menu {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .fa-bars {
+            background-color: #1259c3;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 3px;
+            color: #ebebeb;
+        }
+        
+        .descuentos,
+        .descripciones {
+            font-size: 16px;
+        }
+        
+        .iconoFooter {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #1259c3;
+        }
+        
+        footer {
+            text-align: center;
+            align-items: center;
+            padding: 15px;
+        }
+        
+        img#banner {
+            max-width: 100%;
+            display: none;
+        }
+        
+        #logo {
+            max-width: 45%;
+        }
+        
+        h2 {
+            text-align: left;
+        }
+        
+        p {
+            font-family: roboto;
+            font-size: 12px;
+        }
+        
+        .titulos {
+            font-family: roboto;
+        }
+        
+        .copyRight {
+            margin-top: 15px;
+        }
+        /**************TABLET******************/
+        
+        @media(min-width:460px) {
+            #importante {
+                justify-content: space-around;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            img#banner {
+                max-width: 100%;
+                display: block;
+            }
+            .cajaProducto {
+                box-shadow: 0px 0px 10px rgb(100, 100, 100);
+                background: white;
+                width: 45%;
+                margin: 5px;
+                height: 250px;
+            }
+            .burger-menu {
+                display: none;
+            }
+            li {
+                display: inline;
+            }
+            li a {
+                font-size: 0.8rem;
+            }
+            ul .fas {
+                font-size: 0.5em;
+                margin-left: 2px;
+            }
+            span {
+                display: block;
+            }
+            main {
+                padding: 0 0 50px 0;
+            }
+            .precios {
+                margin-right: 15px;
+            }
+            .ofertas,
+            .ultimaVista {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .imgProducto {
+                width: 50%;
+            }
+            nav {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+            }
+            .barraTienda,
+            .barraCuenta {
+                width: 50%;
+            }
+            footer {
+                margin-top: 20px;
+                margin-bottom: 15px;
+            }
+            .copyRight {
+                margin-top: 15px;
+            }
+        }
+        /**************DESKTOP******************/
+        
+        @media(min-width:768px) {
+            .compraTexto p {
+                font-size: 25px;
+            }
+            img#banner {
+                width: 100%;
+                display: block;
+            }
+            .cajaProducto {
+                box-shadow: 0px 0px 10px rgb(100, 100, 100);
+                background: white;
+                width: 40%;
+                margin: 5px;
+                height: 20%;
+            }
+            .burger-menu {
+                display: none;
+            }
+            li {
+                display: inline;
+                margin: 2px 10px;
+            }
+            li a {
+                font-size: 2rem;
+            }
+            ul .fas {
+                font-size: 1.4em;
+                margin-left: 10px;
+            }
+            nav {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            nav .barraCuenta {
+                text-align: right;
+                margin-right: 25px;
+            }
+            nav .barraTienda {
+                text-align: left;
+                margin-left: 25px;
+            }
+            span {
+                display: block;
+            }
+            main {
+                padding: 0 0 50px 0;
+            }
+            .ofertas,
+            .ultimaVista {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                justify-content: space-between;
+            }
+            .imgProducto {
+                width: 50%;
+            }
+            footer {
+                margin-top: 20px;
+            }
+            footer section {
+                display: flex;
+            }
+            footer section div {
+                margin: 0 15px;
+            }
+            .copyRight {
+                text-align: center;
+                margin-top: 15px;
+            }
+        }
