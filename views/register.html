@@ -53,41 +53,48 @@
         </nav>
     </header>
 
-    <form action="/" method="get">
-        <div><label for="name">Nombre y Apellido</label>
-            <input type="text" id="name" name="name" required minlength="3" maxlength="30">
-        </div>
-        <div><label for="user">Nombre de Usuario</label>
-            <input type="text" id="user" name="user" required minlength="4" maxlength="10">
-        </div>
-        <div><label for="fecha">Fecha de Nacimiento</label>
+    <form action="/" method="get" class="formRegistro">
+        <div class="datosPersonalesRegistro">
+            <input type="text" id="name" name="name" required minlength="3" maxlength="30" placeholder="Nombre y Apellido">
+            <input type="text" id="user" name="user" required minlength="4" maxlength="10" placeholder="Nombre de Usuario">
+            <input type="text" id="email" name="email" required minlength="4" maxlength="10" placeholder="Email">
+            <br>
+            <label for="fecha">Fecha de Nacimiento</label>
             <input type="date" id="fecha" name="fecha" required>
+            <input type="text" id="domicilio" name="domicilio" placeholder="Domicilio">
         </div>
-        <div> <label for="domicilio">Domicilio</label>
-            <input type="text" id="domicilio" name="domicilio">
+
+        <div class="perfilDeUsuario">
+            <label for="perfilUser" class="userPerfilLabel">Perfil de Usuario</label>
+            <label for="veendedor">vendedor</label>
+            <input type="radio" id="vendedor" name="perfilUser" value="vendedor">
+            <label for="comprador">comprador</label>
+            <input type="radio" id="comprador" name="perfilUser" value="comprador">
         </div>
-        <div>
-            <label for="perfilUser">Perfil de Usuario</label>
-            <input type="checkbox" id="vendedor" name="perfilUser" value="vendedor">
-            <input type=" checkbox " id="comprador" name="perfilUser " value="comprador " checked>
-        </div>
-        <div>
-            <label for="categoria ">Categorías</label>
-            <input type="radio " name="categoria " value="Electro ">
-            <input type="radio " name="categoria " value="Moda ">
-            <input type="radio " name="categoria " value="Hogar ">
-            <input type="radio " name="categoria " value="Jugetería ">
-            <input type="radio " name="categoria " value="Vida Sana ">
+        <div class="categorias">
+
+            <label for="categoria" class="categoriasLabel">Categorías</label>
+            <div><label for="electro">Electro</label><input type="checkbox" name="categoria" value="Electro"></div>
+
+            <div> <label for="moda">Moda</label> <input type="checkbox" name="categoria" value="Moda"></div>
+
+            <div> <label for="hogar">Hogar</label> <input type="checkbox" name="categoria" value="Hogar"></div>
+
+            <div> <label for="jugueteria">Jugetería Jugetería</label> <input type="checkbox" name="categoria" value="Jugetería"></div>
+
+            <div> <label for="vidaSana">vida Sana</label> <input type="checkbox" name="categoria" value="Vida Sana"></div>
+
+
         </div>
         <div>
             <label for="picUser">Foto de Usuario</label>
             <input type="file" name="avatar" accept=".jpg" multiple>
         </div>
-        <div>
+        <div class="contraseña">
             <label for="password">Contraseña</label>
             <input type="password" name="password" id="password" required minlength="6" maxlength="10">
         </div>
-        <div>
+        <div class="botonesDeResetEnvio">
             <button type="reset">CANCELAR</button>
             <button type="submit">ENVIAR</button>
 

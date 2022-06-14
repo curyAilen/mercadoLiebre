@@ -19,15 +19,16 @@
     <header>
         <div class="contenedorLogoBuscador">
             <img src="imagenes/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre" id="logo">
-            <div>
+
+            <div class="buscador">
                 <input type="text" name="busqueda" id="buscador">
                 <i class="fas fa-search"></i>
             </div>
-        </div>
-        <br>
-        <div class="compraTexto">
-            <i class="fas fa-shopping-cart"></i>
-            <p>Comprá en cuotas y sin tarjeta de crédito</p>
+
+            <div class="compraTexto">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
         </div>
 
         <nav>
@@ -54,7 +55,8 @@
 
     <form action="/" method="POST">
 
-        <div><label for="user">Nombre de Usuario</label>
+        <div>
+            <label for="user">Nombre de Usuario</label>
             <input type="text" id="user" name="user">
         </div>
 
@@ -63,7 +65,6 @@
             <input type="password" name="password" id="password">
         </div>
         <div>
-
             <button type="submit">ENVIAR</button>
 
         </div>
