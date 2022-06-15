@@ -1,4 +1,4 @@
-    /*
+/*
 ● Paleta de colores
 Amarillo: #EAC926;
 Azul: #03264C;
@@ -7,411 +7,526 @@ Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a;
 */
-    /*GENERAL*/
-    
-    body {
-        background-color: #EAC926;
+
+
+/*GENERAL*/
+
+body {
+    background-color: #EAC926;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#logo {
+    max-width: 45%;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    font-family: roboto;
+    font-size: 12px;
+}
+
+.titulos {
+    font-family: roboto;
+}
+
+
+/********************************************************************************************NAV HEADER*************************************************/
+
+.contenedorLogoBuscador {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#buscador {
+    width: 70%;
+}
+
+#logo {
+    width: 50%;
+}
+
+.buscador {
+    width: 50%;
+    text-align: center;
+}
+
+.buscador input {
+    width: 100%;
+}
+
+.compraTexto {
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.compraTexto i {
+    margin: 0 20px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+li {
+    display: none;
+}
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-bars {
+    background-color: #1259c3;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 3px;
+    color: #ebebeb;
+}
+
+img#banner {
+    max-width: 100%;
+    display: none;
+}
+
+
+/*********************MAIN PRODUCTOS**********************/
+
+main {
+    background-color: #ebebeb;
+    padding: 0 0 50px 0;
+}
+
+.descuentos,
+.descripciones {
+    font-size: 16px;
+}
+
+.imgProducto {
+    width: 59%;
+}
+
+.fa-shipping-fast {
+    color: #39b54a;
+    font-size: 1em;
+    border-radius: 50%;
+    border: 2px solid #39b54a;
+    padding: 15px;
+}
+
+
+/**********ANIMACIÓN ICONO CAMION*******************************************/
+
+.cajaProducto:hover i {
+    transform: rotate(268deg);
+    transition-duration: 3s;
+}
+
+#importante {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.detalleProductos {
+    position: relative;
+    display: flex;
+    border-top: solid 1px #ebebeb;
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.detalleProductos i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.precios {
+    width: 30%;
+    font-size: 18px;
+}
+
+.descuentos {
+    width: 70%;
+    color: #39b54a;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.cajaProducto {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: white;
+    position: relative;
+}
+
+
+/************FOOTER CELULAR******************************************************************************/
+
+footer {
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.iconoFooter {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.copyRight {
+    margin-top: 15px;
+}
+
+
+/***************************************************************************************************************************************************************************REGISTRO CELULAR*********************************************/
+
+.formRegistro {
+    background: #ebebeb;
+    text-align: center;
+    padding: 15px;
+    width: 85%;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 10px 12px 26px -2px rgba(0, 0, 0, 0.48);
+}
+
+.datosPersonalesRegistro input {
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.datosPersonalesRegistro input {
+    width: 100%;
+    margin: 15px auto;
+}
+
+.perfilDeUsuario,
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 15px 0;
+    align-items: center;
+    background-color: #e6e6e6;
+}
+
+.userPerfilLabel,
+.categoriasLabel {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.perfilDeUsuario input {
+    width: 25%;
+}
+
+.categorias .categoriasCheck {
+    width: 100%;
+}
+
+.categoriasCheck input {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.fotoUser {
+    text-align: center;
+}
+
+.fotoUser input {
+    margin: 15px 0;
+}
+
+.contraseña {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contraseña label {
+    width: 100%;
+}
+
+.botonesDeResetEnvio button {
+    margin: 15px;
+}
+
+
+/***************************************************************************************************************************************************************************LOGIN CELULAR*********************************************/
+
+.datosPersonalesLogin input {
+    width: 100%;
+    margin: 15px auto;
+}
+
+.btnEnvioLogin {
+    background-color: #ebebeb;
+    padding: 5px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btnEnvioLogin:hover {
+    background-color: #0022AA;
+    transition-duration: 2s;
+    color: #ebebeb;
+}
+
+
+/*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+/**************TABLET******************/
+
+@media(min-width:460px) {
+    .formRegistro {
+        width: 65%;
+        text-align: center;
     }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    /*NAV HEADER*/
-    
     .contenedorLogoBuscador {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
     }
-    
-    #buscador {
-        width: 70%;
-    }
-    
     #logo {
-        width: 50%;
+        width: 20%;
     }
-    
     .buscador {
-        width: 50%;
+        width: 30%;
         text-align: center;
     }
-    
     .buscador input {
         width: 100%;
+        font-size: 25px;
+        margin: 0 15px 0 0;
     }
-    
+    .buscador i {
+        font-size: 25px;
+    }
     .compraTexto {
         margin-top: 25px;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        display: flex;
+        width: 40%;
     }
-    
-    .compraTexto i {
-        margin: 0 20px;
-    }
-    
-    ul li a {
-        text-decoration: none;
-    }
-    
-    li {
-        display: none;
-    }
-    /*********************MAIN PRODUCTOS**********************/
-    
-    main {
-        background-color: #ebebeb;
-        padding: 0 0 50px 0;
-    }
-    
-    .imgProducto {
-        width: 59%;
-    }
-    
-    .fa-shipping-fast {
-        color: #39b54a;
-        font-size: 1em;
-        border-radius: 50%;
-        border: 2px solid #39b54a;
-        padding: 15px;
-    }
-    
     #importante {
-        max-width: 90%;
-        margin-left: auto;
+        justify-content: space-around;
         margin-right: auto;
-        text-align: center;
+        margin-left: auto;
     }
-    
-    .cajaProducto {
-        margin: 10px 0;
-        padding: 15px;
-        background-color: white;
-    }
-    
-    .detalleProductos {
-        position: relative;
-        display: flex;
-        border-top: solid 1px #ebebeb;
-        text-align: left;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    
-    .detalleProductos i {
-        display: block;
-        font-size: 16px;
-        padding: 5px;
-        width: 30px;
-        height: 30px;
-        border: 1px solid #39b54a;
-        background-color: #FFF;
-        border-radius: 50%;
-        position: absolute;
-        right: 20px;
-        top: -15px;
-    }
-    
-    .precios {
-        width: 30%;
-        font-size: 18px;
-    }
-    
-    .descuentos {
-        width: 70%;
-        color: #39b54a;
-        margin-left: 15px;
-        text-align: left;
-    }
-    
-    .nombreProducto {
-        text-align: left;
-    }
-    
-    .burger-menu {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .fa-bars {
-        background-color: #1259c3;
-        padding: 10px;
-        margin: 20px;
-        border-radius: 3px;
-        color: #ebebeb;
-    }
-    
-    .descuentos,
-    .descripciones {
-        font-size: 16px;
-    }
-    
-    .iconoFooter {
-        font-size: 2em;
-        margin-bottom: 10px;
-        color: #1259c3;
-    }
-    
-    footer {
-        text-align: center;
-        align-items: center;
-        padding: 15px;
-    }
-    
     img#banner {
         max-width: 100%;
+        display: block;
+    }
+    .cajaProducto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        background: white;
+        width: 45%;
+        margin: 5px;
+        height: 250px;
+        position: none;
+    }
+    .nombreProducto {
+        opacity: 100%;
+        background-color: #1259c300;
+        color: black;
+    }
+    .burger-menu {
         display: none;
     }
-    
-    #logo {
-        max-width: 45%;
+    li {
+        display: inline;
+        margin: 0 10px;
     }
-    
-    h2 {
-        text-align: left;
+    li a {
+        font-size: 0.8rem;
+        color: black;
+        text-align: center;
     }
-    
-    p {
-        font-family: roboto;
-        font-size: 12px;
+    ul .fas {
+        font-size: 0.5em;
+        margin-left: 2px;
     }
-    
-    .titulos {
-        font-family: roboto;
+    span {
+        display: block;
     }
-    
+    main {
+        padding: 0 0 50px 0;
+    }
+    .precios {
+        margin-right: 15px;
+    }
+    .ofertas,
+    .ultimaVista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .imgProducto {
+        width: 50%;
+    }
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .barraTienda,
+    .barraCuenta {
+        width: 50%;
+        margin: 15px;
+    }
+    .barraCuenta {
+        text-align: right;
+    }
+    /************************FOOTER TABLET**************************************************************************************************************************************/
+    footer {
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
     .copyRight {
         margin-top: 15px;
     }
-    /***************************************************************************************************************************************************************************REGISTRO CELULAR*********************************************/
-    
-    .formRegistro {
-        background: #ebebeb;
-        text-align: center;
-        padding: 15px;
-        width: 85%;
-        margin: 0 auto 0 auto;
-        border-radius: 10px;
-        box-shadow: 10px 12px 26px -2px rgba(0, 0, 0, 0.48);
+    .iconoFooter:hover {
+        color: #4f6689;
     }
-    
-    input {
-        border-radius: 5px;
-        box-sizing: border-box;
-        padding: 5px;
-        width: 100%;
-        margin: 0 auto 0 auto;
-    }
-    
-    .datosPersonalesRegistro input {
-        width: 80%;
-        margin: 15px auto;
-    }
-    
-    .perfilDeUsuario,
-    .categorias {
-        display: flex;
-        flex-wrap: wrap;
+    /**************ANIMACIÓN DESCRIPCIÓN***********************/
+    .nombreProducto {
         text-align: left;
-        margin: 15px 0;
-        align-items: center;
+        opacity: 0;
     }
-    
-    .userPerfilLabel,
-    .categoriasLabel {
+    .cajaProducto:hover .nombreProducto {
+        opacity: 100%;
+        /*   animation-name: descripcionProducto;*/
+        transition-duration: 2s;
+    }
+    .cajaProducto:hover {
+        box-shadow: 0px 0px 10px rgb(216, 204, 150);
+    }
+    /*
+        @keyframes descripcionProducto {
+            0% {
+                opacity: 0%;
+                font-size: 0;
+            }
+            50% {
+                opacity: 50%;
+            }
+            100% {
+                opacity: 100%;
+                font-size: 20px;
+            }
+        }
+     */
+}
+
+
+/******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************DESKTOP******************/
+
+@media(min-width:768px) {
+    .compraTexto p {
+        font-size: 25px;
+    }
+    img#banner {
         width: 100%;
-        margin-bottom: 10px;
+        display: block;
     }
-    
-    .perfilDeUsuario input {
-        width: 25%;
+    .cajaProducto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        background: white;
+        width: 40%;
+        margin: 5px;
+        height: 20%;
     }
-    
-    .categorias div {
-        width: 100%;
+    .burger-menu {
+        display: none;
     }
-    /*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-    /**************TABLET******************/
-    
-    @media(min-width:460px) {
-        .formRegistro {
-            width: 65%;
-            text-align: center;
-        }
-        .contenedorLogoBuscador {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-        }
-        #logo {
-            width: 20%;
-        }
-        .buscador {
-            width: 30%;
-            text-align: center;
-        }
-        .buscador input {
-            width: 100%;
-            font-size: 25px;
-            margin: 0 15px 0 0;
-        }
-        .buscador i {
-            font-size: 25px;
-        }
-        .compraTexto {
-            margin-top: 25px;
-            width: 40%;
-        }
-        #importante {
-            justify-content: space-around;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        img#banner {
-            max-width: 100%;
-            display: block;
-        }
-        .cajaProducto {
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
-            background: white;
-            width: 45%;
-            margin: 5px;
-            height: 250px;
-        }
-        .burger-menu {
-            display: none;
-        }
-        li {
-            display: inline;
-            margin: 0 10px;
-        }
-        li a {
-            font-size: 0.8rem;
-            color: black;
-            text-align: center;
-        }
-        ul .fas {
-            font-size: 0.5em;
-            margin-left: 2px;
-        }
-        span {
-            display: block;
-        }
-        main {
-            padding: 0 0 50px 0;
-        }
-        .precios {
-            margin-right: 15px;
-        }
-        .ofertas,
-        .ultimaVista {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .imgProducto {
-            width: 50%;
-        }
-        nav {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
-        .barraTienda,
-        .barraCuenta {
-            width: 50%;
-            margin: 15px;
-        }
-        .barraCuenta {
-            text-align: right;
-        }
-        footer {
-            margin-top: 20px;
-            margin-bottom: 15px;
-        }
-        .copyRight {
-            margin-top: 15px;
-        }
+    li {
+        display: inline;
+        margin: 2px 10px;
     }
-    /**************DESKTOP******************/
-    
-    @media(min-width:768px) {
-        .compraTexto p {
-            font-size: 25px;
-        }
-        img#banner {
-            width: 100%;
-            display: block;
-        }
-        .cajaProducto {
-            box-shadow: 0px 0px 10px rgb(100, 100, 100);
-            background: white;
-            width: 40%;
-            margin: 5px;
-            height: 20%;
-        }
-        .burger-menu {
-            display: none;
-        }
-        li {
-            display: inline;
-            margin: 2px 10px;
-        }
-        li a {
-            font-size: 1.5rem;
-            color: black
-        }
-        ul .fas {
-            font-size: 1.4em;
-            margin-left: 10px;
-        }
-        nav {
-            margin: 38px 0;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-between;
-        }
-        nav .barraCuenta {
-            text-align: right;
-            margin-right: 25px;
-        }
-        nav .barraTienda {
-            text-align: left;
-            margin-left: 25px;
-        }
-        span {
-            display: block;
-        }
-        main {
-            padding: 0 0 50px 0;
-        }
-        .ofertas,
-        .ultimaVista {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
-            justify-content: space-between;
-        }
-        .imgProducto {
-            width: 50%;
-        }
-        footer {
-            margin-top: 20px;
-        }
-        footer section {
-            display: flex;
-        }
-        footer section div {
-            margin: 0 15px;
-        }
-        .copyRight {
-            text-align: center;
-            margin-top: 15px;
-        }
+    li a {
+        font-size: 1.5rem;
+        color: black
     }
+    ul .fas {
+        font-size: 1.4em;
+        margin-left: 10px;
+    }
+    nav {
+        margin: 38px 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    nav .barraCuenta {
+        text-align: right;
+        margin-right: 25px;
+    }
+    nav .barraTienda {
+        text-align: left;
+        margin-left: 25px;
+    }
+    span {
+        display: block;
+    }
+    main {
+        padding: 0 0 50px 0;
+    }
+    .ofertas,
+    .ultimaVista {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .imgProducto {
+        width: 50%;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    footer section {
+        display: flex;
+    }
+    footer section div {
+        margin: 0 15px;
+    }
+    .copyRight {
+        text-align: center;
+        margin-top: 15px;
+    }
+    /********************FORMULARIO REGISTRO**************************/
+    form input {
+        width: 50%;
+    }
+}
