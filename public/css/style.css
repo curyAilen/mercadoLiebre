@@ -417,6 +417,7 @@ footer {
     }
     .iconoFooter:hover {
         color: #4f6689;
+          transition-duration: 2s;
     }
     /**************ANIMACIÓN DESCRIPCIÓN***********************/
     .nombreProducto {
@@ -430,6 +431,7 @@ footer {
     }
     .cajaProducto:hover {
         box-shadow: 0px 0px 10px rgb(216, 204, 150);
+          transition-duration: 2s;
     }
     /*
         @keyframes descripcionProducto {
